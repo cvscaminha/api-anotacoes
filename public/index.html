@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Anotações</title>
+  </head>
+  <body>
+    <h1>Minhas anotações</h1>
+    <div class="form">
+      <input id="id" type="text" hidden />
+
+      <label for="">
+        Título
+        <input id="titulo" type="text" placeholder="Digite o título" />
+      </label>
+      <label for="">
+        Descrição
+        <textarea
+          name=""
+          id="descricao"
+          rows="5"
+          placeholder="Digite a anotação"
+        ></textarea>
+      </label>
+      <button onclick="salvar()">Salvar</button>
+      <button>Cancelar</button>
+    </div>
+
+    <div class="list"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="init.js"></script>
+  </body>
+</html>
